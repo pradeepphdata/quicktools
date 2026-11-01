@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="manifest" href="/minitools/manifest.json">
+<meta name="theme-color" content="#0891b2">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 <!-- ═══ SEO ═══ -->
@@ -632,5 +635,6 @@ window.addEventListener('load',()=>{
   if(last&&document.getElementById('tool-'+last))go(last);
 });
 </script>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("/minitools/sw.js");</script>
 </body>
 </html>
